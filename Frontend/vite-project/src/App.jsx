@@ -10,9 +10,13 @@ import DoctorDetails from './pages/DoctorDetails';
 import MyAppointments from './pages/MyAppointments';
 import Profile from './pages/Profile';
 import Services from './pages/Services';
+import Navbar from './components/Navbar';
+import { Toaster } from 'react-hot-toast';
 const App = () => {
   return (
     <div>
+      <Toaster/>
+      <Navbar />
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
