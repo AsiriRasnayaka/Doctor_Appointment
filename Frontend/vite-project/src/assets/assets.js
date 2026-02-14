@@ -35,7 +35,7 @@ import telephone from "./telephone.png";
 import why_choose_us from "./why_choose_us.jpg";
 import { CheckCheckIcon } from "lucide-react";
 import banner_img from "./banner_img.jpg";
-import logo from "./logo.png";
+import logo from "./logo1.png";
 export const assets = {
   mission_img1,
   mission_img2,
