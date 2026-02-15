@@ -3,7 +3,7 @@ import { assets } from '../assets/assets.js';
 
 const Footer = () => {
   return (
-    <Footer className="py-16 w-full bg-[#231F53] text-white">
+    <footer className="py-16 w-full bg-[#231F53] text-white">
         <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col items-center">
         <div className="flex items-center  space-x-3 mb-6">
           <img src={assets.logo} alt="" className="h-11" />
@@ -41,7 +41,7 @@ const Footer = () => {
           <p>Hello Doc ©2025. All rights reserved.</p>
         </div>
       </div>
-    </Footer>
+    </footer>
   )
 }
 
