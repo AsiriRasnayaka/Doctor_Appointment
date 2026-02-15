@@ -12,6 +12,7 @@ import Profile from './pages/Profile';
 import Services from './pages/Services';
 import Navbar from './components/Navbar';
 import { Toaster } from 'react-hot-toast';
+import Footer from './components/Footer';
 const App = () => {
   return (
     <div>
@@ -29,6 +30,7 @@ const App = () => {
       <Route path="/profile" element={<Profile />} />
       <Route path="/services" element={<Services />} />
     </Routes>
+    <Footer />
     </div>
     
   )
