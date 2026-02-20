@@ -1,7 +1,7 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import App from "../App";
 import { useNavigate } from "react-router-dom";
-
+import { specialtiesData } from "../assets/assets";
 
 
 
@@ -11,7 +11,14 @@ const AppContextProvider = ({ children})=> {
     const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
     const [user, setUser] = useState(null);
-    const value = { navigate, user, setUser, loading, setLoading };
+    const [healthSpecialties, setHealthSpecialties] = useState([]);
+  const fetchHealthSpecialties = () => {
+    setHealthSpecialties(specialtiesData);
+  };
+  useEffect(() => {
+    fetchHealthSpecialties();
+  }, []);
+    const value = { navigate, user, setUser, loading, setLoading, healthSpecialties };
     return <AppContext.Provider value={value}>{children}</AppContext.Provider>
 };
 
